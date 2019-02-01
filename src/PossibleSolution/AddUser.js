@@ -23,7 +23,7 @@ class AddUser extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    const userExists = this.contactExists(this.state.user.username);
+    const userExists = this.contactExists(this.state.user.username);	
 
     if (!userExists) {
       this.props.onAddUser(this.state.user);
